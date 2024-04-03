@@ -1,6 +1,7 @@
 import footerLogo from "../assets/images/footer-logo.svg";
 import { footerLinks, socialMedia } from "../constants";
 import copyright from "../assets/icons/copyright-sign.svg";
+import { FooterSection, SocialMedia } from "../types/types";
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
             your perfect Size in Store. Get Rewards
           </p>
           <div className="flex items-center gap-5 mt-8">
-            {socialMedia.map((icon) => (
+            {socialMedia.map((icon: SocialMedia) => (
               <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
                 <img src={icon.src} alt={icon.alt} width={24} height={24} />
               </div>
@@ -23,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
-          {footerLinks.map((section) => (
+          {footerLinks.map((section: FooterSection) => (
             <div key={section.title}>
               <h4 className="text-white font-montserrat text-2xl leading-normal font-medium mb-6">
                 {section.title}

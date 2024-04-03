@@ -4,7 +4,7 @@ import { shoes, statistics } from "../constants";
 import bigShoeImg from "../assets/images/big-shoe1.png";
 import ShoeCard from "../components/ShoeCard";
 import { useState } from "react";
-import { Shoe } from "../types/service";
+import { Shoe, Stat } from "../types/types";
 
 const Hero = () => {
   const [bigShoeImgState, setBigShoeImageState] = useState(bigShoeImg);
@@ -34,7 +34,7 @@ const Hero = () => {
         <Button label="Shop now" iconUrl={ArrowRight} />
 
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
-          {statistics.map((stat, index) => (
+          {statistics.map((stat: Stat, index) => (
             <div key={index}>
               <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
               <p className="leading-7 font-montserrat text-slate-gray">

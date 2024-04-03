@@ -1,4 +1,4 @@
-import { Service } from "../types/service";
+import { Service } from "../types/types";
 
 const ServiceCard = (service: Service) => {
   return (

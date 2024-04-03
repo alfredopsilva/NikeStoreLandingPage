@@ -1,4 +1,4 @@
-import { Review } from "../types/service";
+import { Review } from "../types/types";
 import start from "../assets/icons/star.svg";
 
 const ReviewCard = (review: Review) => {

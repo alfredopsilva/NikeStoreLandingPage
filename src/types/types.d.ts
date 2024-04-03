@@ -15,3 +15,23 @@ export type Shoe = {
   thumbnail: string;
   bigShoe: string;
 };
+
+export type Stat = {
+  value: string;
+  label: string;
+};
+
+export type Link = {
+  name: string;
+  link: string;
+};
+
+export type FooterSection = {
+  title: string;
+  links: Link[];
+};
+
+export type SocialMedia = {
+  src: string;
+  alt: string;
+};

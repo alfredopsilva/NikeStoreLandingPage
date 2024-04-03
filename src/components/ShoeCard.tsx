@@ -1,4 +1,4 @@
-import { Shoe } from "../types/service";
+import { Shoe } from "../types/types";
 
 type shoeCardProps = {
   changeBigShoeImage: (shoe: Shoe) => void;
