@@ -10,3 +10,8 @@ export type Review = {
   rating: number;
   feedback: string;
 };
+
+export type Shoe = {
+  thumbnail: string;
+  bigShoe: string;
+};

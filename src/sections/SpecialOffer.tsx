@@ -4,7 +4,7 @@ import offer from "../assets/images/offer.svg";
 
 const SpecialOffer = () => {
   return (
-    <section className="flex justify-wrap items-center max-xl:flex-col-reserve gap-10 max-container">
+    <section className="flex justify-wrap items-center max-xl:flex-col gap-10 max-container">
       <div className="flex-1">
         <img
           src={offer}
